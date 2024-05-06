@@ -5,7 +5,7 @@ package hello; // 包名
 option go_package = "./;hello"; // 定义 go 包名
 
 message Say{  // 定义结构体
-  int64           id    = 1;
+  int64           id    = 1; // 1：标示号，在每个消息体中是唯一的
   string          hello = 2;
-  repeated string word  = 3;
+  repeated string word  = 3; // repeated 用来标记为数组
 }
