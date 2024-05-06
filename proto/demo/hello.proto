@@ -1,10 +1,10 @@
-syntax = "proto3";
+syntax = "proto3"; // proto 版本号
 
-package hello;
+package hello; // 包名
 
-option go_package = "./;hello";
+option go_package = "./;hello"; // 定义 go 包名
 
-message Say{
+message Say{  // 定义结构体
   int64           id    = 1;
   string          hello = 2;
   repeated string word  = 3;
